@@ -1,0 +1,11 @@
+grep -i ./* 
+grep -n "function" {}
+
+-i = ignore case sensitivity
+-n = string with line number
+-exec = execute 
+-tee = output list and copy into a file
+
+ls > [FILE] = output the list into file
+
+

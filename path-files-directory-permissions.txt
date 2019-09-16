@@ -1,0 +1,103 @@
+Paths - Files & Folders
+===========================
+pwd = present working directory
+~/  = home path
+/   = root path/Absolute path
+./  = current directory
+..  = go up one level
+cd - = home directory
+
+Change Directory options
+===========================
+l - list
+ls  - list the directory content (alphabetical)
+ls -l = long listing (alphabetical)
+ls -r = long listing (Reverse)
+ls -p = long listing (based on file type)
+ls -a = long listing (based on file size)
+ls (path) = list the files & folders within given path
+ls --help = list help
+
+Application maintainance
+===========================
+sudo = super user do
+su   = switch user
+sudo su 
+sudo apt-get install [APP_NAME] = install application
+sudo apt-get upgrade [APP_NAME] = upgrade application
+sudo apt-get remove [APP_NAME] = remove application 
+sudo apt-cache search [APP_NAME]*  = search package by name
+sudo apt-cache policy [APP_NAME]*  = search package by official repository
+sudo dpkg -i /[ABS_PATH] = install unofficial package
+
+File permissions
+===========================
+chown = change owner
+chmod = change modificiations
+
+chmod +rwx filename to add permissions.
+chmod -rwx directoryname to remove permissions.
+chmod +x filename to allow executable permissions.
+chmod -wx filename to take out write and executable permissions.
+
+chmod g+w filename
+chmod g-wx filename
+chmod o+w filename
+chmod o-rwx foldername
+
+-/rwx/r--/r--
+=====================
+file type
+- = indicates file
+d = directory
+i = line
+=====================
+Owner
+rwx = read,write execute
+=====================
+group
+r-- = read only
+=====================
+Other Users
+r-- = read only
+
+0 = No Permission
+1 = Execute
+2 = Write
+4 = Read
+
+0 = ---
+1 = --x
+2 = -w-
+3 = -wx
+4 = r-
+5 = r-x
+6 = rw-
+7 = rwx
+
+sudo chown root:nick file.text
+sudo chmod 664 file.txt
+
+sudo nano [FILENAME] = create a new file
+touch file1.txt file2.txt file3.txt file4.txt = create multiple file
+rm [FILENAME] = remove file
+mkdir [DIRNAME] = create directory
+rm -rf [DIRNAME] = remove directory
+cp [SOURCE] [DESTINATION] = copy
+rm mydir/*.txt
+rm -rf  mydir/*
+
+sudo chown -R nick:nick ./mydir
+-R means recursive
+
+=============================
+mv [SOURCE NAME] [PATH + NEW NAME] = Rename a directory
+find . -type f -iname "[WILD CARD STRONG]" = find files
+find . -maxdepth 2 type f -iname "[WILD CARD STRONG]" = find files by depth
+find . -type f -not -iname "[WILD CARD STRONG]" = find files except
+find . -type f -perm "[PERMISSION]" = find files by permissions
+find . -type f -size "[SIZE]" = find files by search
+
+
+
+

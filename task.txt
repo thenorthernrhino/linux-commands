@@ -1,0 +1,9 @@
+top 
+pid = process ID
+Users = running addslashes
+ps aux | grep [taskname] = fild task to find the process
+pgrep chrome
+
+
+kill -9 [PROCESS_ID1][PROCESS_ID2]...[PROCESS_IDN]
+killall [PROCESS_NAME]
